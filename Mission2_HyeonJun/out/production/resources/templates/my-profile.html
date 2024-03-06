@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <h1>My Profile</h1>
+  <h3>Welcome!</h3>
+  <p>ID: <span sec:authentication="name"></span>님!</p>
+<!--  <p>Nickname: <span sec:authentication="nickname"></span>님!</p>-->
+<!--  <p>Age: <span sec:authentication="age"></span>님!</p>-->
+<!--  <p>Phone: <span sec:authentication="phone"></span>님!</p>-->
+<!--  <p>Email: <span sec:authentication="email"></span>님!</p>-->
+  <form action="/users/logout" method="post">
+    <input type="submit" value="로그아웃">
+  </form>
+</body>
+</html>
